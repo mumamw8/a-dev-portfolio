@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+/* Global Styles */
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #111010;
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.center-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 60%;
+}
+
+aside {
+  margin: 30% 0 0 0;
+}
+
+aside h1 {
+  font-size: 4rem;
+  font-family: 'Kaisei Tokumin', serif;
+}
+nav {
+  margin: 20px 0 0 0;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: #737373;
+  font-family: 'Kaisei Tokumin', serif;
+  font-weight: bold;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+}
+.active-page {
+  background-color: #262626;
+  color: whitesmoke;
+}
+
+/* -------- Content | HOME PAGE -------- */
+.content {
+  margin: 20% 0 0 0;
+  color: #e5e5e5;
+  line-height: 1.5rem;
+}
+.content h2 {
+  font-weight: 400;
+}
+.content p {
+  font-weight: 100;
+  padding: 10px 0 0 0;
+}
+img {
+  height: 120px;
+	width: 120px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#profilePhoto {
+  padding: 20px 0 0 0;
+}
+
+.nav-links {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.nav-links a {
+  margin: 10px;
+  border: 1px solid #e5e5e522;
+  max-width: fit-content;
+}
+.nav-links a:hover {
+  background-color: #262626;
+}
+.nav-links a div {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background: transparent;
+}
+.nav-links a div p {
+  text-align: center;
+  background: transparent;
+}
+i {
+  font-size: 1.7rem;
+  margin: auto;
+  color: #e5e5e522;
+  background: transparent;
+}
+
+/* -------- Content | PROJECTS PAGE -------- */
+#projects {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#projects div {
+  margin: 10px;
+  border: 1px solid #e5e5e522;
+  padding: 10px 0 10px 0;
+}
+#projects div ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  list-style: none;
+  margin: 20px 0 20px 0;
+}
+#projects div ul li {
+  margin: 0 10px 0 10px;
+  text-align: center;
+  background-color: #737373;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+#projects img {
+  height: 120px;
+	width: 100%;
+  border-radius: 0;
+  object-fit: cover;
+  background-color: black;
+}
+#projects h2 {
+  color: #737373;
+  font-family: 'Kaisei Tokumin', serif;
+  margin: 10px;
+}
+#projects a {
+  font-size: 0.9rem;
+  color: #7C96AB;
+  text-decoration: underline;
+}
+
+/* -------- Content | BLOG PAGE -------- */
+span {
+  color: #e5e5e522;
+}
+
+@media only screen and (max-width: 1204px){
+  /*Tablets [601px -> 1200px]*/
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 767px){
+  body {
+    font-size: 14px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  aside {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    min-height: 300px;
+  }
+  aside h1 {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+  aside ul {
+    display: flex;
+  }
+  aside li {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .content {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

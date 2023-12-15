@@ -1,23 +1,4 @@
-const projects = [
-  {
-      title: 'Listr',
-      imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
-      techStack: ['Next.js', 'PostgreSQL'],
-      projectUrl: 'https://github.com/mumamw8/listr-app.git',
-  },
-  {
-      title: 'Mock Portfolio Site',
-      imageUrl: 'https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-      techStack: ['React'],
-      projectUrl: 'https://mumamw8.github.io/alif-portfolio/',
-  },
-  {
-      title: 'micro C compiler',
-      imageUrl: 'https://images.unsplash.com/photo-1538503529202-7a0e79cbb6f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-      techStack: ['C'],
-      projectUrl: 'https://github.com/mumamw8/Prog4.git',
-  },
-]
+// projects data from ./projects.js
 const projectsContainer = document.getElementById("projects");
 
 // Loop through the projects array and create an HTML element for each one
@@ -51,7 +32,7 @@ for (let i = 0; i < projects.length; i++) {
   // Add the project URL
   const urlElement = document.createElement("a");
   urlElement.href = project.projectUrl;
-  urlElement.innerText = "View project";
+  urlElement.innerText = project.projectUrl === '#' ? 'Closed Project' : "View project";
   projectElement.appendChild(urlElement);
 
   // Add the project element to the container

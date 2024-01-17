@@ -1,11 +1,5 @@
 const projects = [
     {
-        title: 'Listr',
-        imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
-        techStack: ['Next.js', 'PostgreSQL'],
-        projectUrl: 'https://github.com/mumamw8/listr-app.git',
-    },
-    {
         title: 'Mock Portfolio Site',
         imageUrl: 'https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
         techStack: ['React'],
